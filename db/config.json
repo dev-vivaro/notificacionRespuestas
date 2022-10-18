@@ -1,0 +1,54 @@
+{
+  "prod": {
+    "user": "sysdbo",
+    "password": "QxaAvTeG",
+    "server": "mtelsqlsms2",
+    "database": "SMSCargas",
+    "connectionTimeout": 300000,
+    "requestTimeout": 300000,
+    "options": {
+      "encrypt": false
+    },
+    "pool": {
+      "idleTimeoutMillis": 300000
+    }
+  },
+  "qa": {
+    "user": "sysdbo",
+    "password": "QxaAvTeG",
+    "server": "MTELQASQLSMS2",
+    "database": "SMSCargas",
+    "connectionTimeout": 300000,
+    "requestTimeout": 300000,
+    "options": {
+      "encrypt": false
+    },
+    "pool": {
+      "idleTimeoutMillis": 300000
+    }
+  },
+  "dev": {
+    "user": "sysdbo",
+    "password": "desarrollo",
+    "server": "MTELTESTSQL2",
+    "database": "SMSCargas",
+    "connectionTimeout": 300000,
+    "requestTimeout": 300000,
+    "options": {
+      "encrypt": false
+    },
+    "pool": {
+      "idleTimeoutMillis": 30000
+    }
+  },
+  "email": {
+    "config": {
+      "host": "10.10.2.2",
+      "port": "25",
+      "secure": false
+    },
+    "remitente": {
+        "from": "Tink Notificaciones <noreplay@vivaro.com>"
+      }
+  }
+}
