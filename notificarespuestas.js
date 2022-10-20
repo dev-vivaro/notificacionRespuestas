@@ -209,7 +209,7 @@ const envioNotificacion = async () => {
 }
 
 (async ()=>{
-	pool = await db.getConnDev()
+	pool = await db.getConnQA()
 	envioNotificacion()
 	return 
 })()
