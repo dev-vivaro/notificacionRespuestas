@@ -45,6 +45,7 @@ const envioNotificacion = async () => {
           // se llena tabla html para correo
           let tabla =''
           lote.forEach(reg => {
+            console.log(reg.FechaBD.toString().substring(0,19).replace('T',' '))
             tabla += `
             <tr>
             <td> ${reg.IdEnvioPr} </td>
@@ -111,6 +112,7 @@ const envioNotificacion = async () => {
           </html>
           `
           // se genera email a enviar
+          console.log(html)
           let mensaje = {
             to: resCampanas[index].CorreoEndpoint,
             subject: 'Notificación de Respuestas',
@@ -209,7 +211,7 @@ const envioNotificacion = async () => {
 }
 
 (async ()=>{
-	pool = await db.getConnQA()
+	pool = await db.getConnDev()
 	envioNotificacion()
 	return 
 })()
