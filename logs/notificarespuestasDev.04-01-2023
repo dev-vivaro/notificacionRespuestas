@@ -1,0 +1,159 @@
+Wed Jan 04 2023 16:15:22 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:15:23 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:15:28 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:15:29 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:15:34 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:15:34 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:15:39 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:15:39 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:15:44 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:15:44 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:15:49 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:15:49 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:15:54 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:15:55 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:16:00 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:16:00 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:16:05 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:16:05 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:16:10 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:16:10 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:16:15 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:16:15 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:16:20 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:16:21 GMT-0600 (hora estándar central) | Enviando 2 registros.
+Wed Jan 04 2023 16:16:21 GMT-0600 (hora estándar central) | {"recordsets":[[{"IdEnvioPr":137298,"ModoNotificacion":1,"CorreoEndpoint":"cacarreon@vivaro.com;","TokenEndpoint":""},{"IdEnvioPr":137300,"ModoNotificacion":1,"CorreoEndpoint":"cacarreon@vivaro.com;","TokenEndpoint":""}],[{"IdEnvioPr":137300,"IdRespuesta":869088,"Telefono":"8111699864","Texto":"rESPUESTA 12:22","MensajeOriginal":"mensaje 12:21","NombreEnvio":"prueba correos carlos 1","FechaBD":"Jan  4 2023  4:16PM","Columna1":"8111699864","Columna2":"Este es un mensaje corto más útil más útil más útil más útil más útil más útil","Columna3":"LEN(B2)","Columna4":"1","Columna5":"0","Columna6":"-","Columna7":"-","Columna8":"-","Columna9":"-","Columna10":"-","ModoNotificacion":1,"CorreoEndpoint":"cacarreon@vivaro.com;","TokenEndpoint":"","FechaInicial":"2022-10-25T12:21:56.857Z","FrecuenciaMinutos":5,"EnviarNotificacion":0},{"IdEnvioPr":137298,"IdRespuesta":869087,"Telefono":"8111699864","Texto":"rESPUESTA 10:30","MensajeOriginal":"mensaje 10:29","NombreEnvio":"envio prueba r5","FechaBD":"Jan  4 2023  4:16PM","Columna1":"8111699864","Columna2":"Este es un mensaje corto más útil más útil más útil más útil más útil más útil","Columna3":"LEN(B2)","Columna4":"1","Columna5":"0","Columna6":"-","Columna7":"-","Columna8":"-","Columna9":"-","Columna10":"-","ModoNotificacion":1,"CorreoEndpoint":"cacarreon@vivaro.com;","TokenEndpoint":"","FechaInicial":"2022-10-25T10:29:13.377Z","FrecuenciaMinutos":5,"EnviarNotificacion":2}]],"recordset":[{"IdEnvioPr":137298,"ModoNotificacion":1,"CorreoEndpoint":"cacarreon@vivaro.com;","TokenEndpoint":""},{"IdEnvioPr":137300,"ModoNotificacion":1,"CorreoEndpoint":"cacarreon@vivaro.com;","TokenEndpoint":""}],"output":{},"rowsAffected":[],"returnValue":0}
+Wed Jan 04 2023 16:16:21 GMT-0600 (hora estándar central) | [[{"IdEnvioPr":137298,"IdRespuesta":869087,"Telefono":"8111699864","Texto":"rESPUESTA 10:30","MensajeOriginal":"mensaje 10:29","NombreEnvio":"envio prueba r5","FechaBD":"Jan  4 2023  4:16PM","Columna1":"8111699864","Columna2":"Este es un mensaje corto más útil más útil más útil más útil más útil más útil","Columna3":"LEN(B2)","Columna4":"1","Columna5":"0","Columna6":"-","Columna7":"-","Columna8":"-","Columna9":"-","Columna10":"-","ModoNotificacion":1,"CorreoEndpoint":"cacarreon@vivaro.com;","TokenEndpoint":"","FechaInicial":"2022-10-25T10:29:13.377Z","FrecuenciaMinutos":5,"EnviarNotificacion":2}],[{"IdEnvioPr":137300,"IdRespuesta":869088,"Telefono":"8111699864","Texto":"rESPUESTA 12:22","MensajeOriginal":"mensaje 12:21","NombreEnvio":"prueba correos carlos 1","FechaBD":"Jan  4 2023  4:16PM","Columna1":"8111699864","Columna2":"Este es un mensaje corto más útil más útil más útil más útil más útil más útil","Columna3":"LEN(B2)","Columna4":"1","Columna5":"0","Columna6":"-","Columna7":"-","Columna8":"-","Columna9":"-","Columna10":"-","ModoNotificacion":1,"CorreoEndpoint":"cacarreon@vivaro.com;","TokenEndpoint":"","FechaInicial":"2022-10-25T12:21:56.857Z","FrecuenciaMinutos":5,"EnviarNotificacion":0}]]
+Wed Jan 04 2023 16:16:21 GMT-0600 (hora estándar central) | 869088 | {"accepted":["cacarreon@vivaro.com"],"rejected":[],"envelopeTime":38,"messageTime":134,"messageSize":3018,"response":"250 2.0.0 Ok: queued as 3FEAE1F8171","envelope":{"from":"noreplay@vivaro.com","to":["cacarreon@vivaro.com"]},"messageId":"<bb872fca-496a-3509-c49a-c20bbb3417aa@vivaro.com>"}
+Wed Jan 04 2023 16:16:21 GMT-0600 (hora estándar central) | 869087 | {"accepted":["cacarreon@vivaro.com"],"rejected":[],"envelopeTime":41,"messageTime":126,"messageSize":3013,"response":"250 2.0.0 Ok: queued as 44FF21F8192","envelope":{"from":"noreplay@vivaro.com","to":["cacarreon@vivaro.com"]},"messageId":"<60e0abec-9642-ea95-d41b-9e46456ee988@vivaro.com>"}
+Wed Jan 04 2023 16:16:26 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:16:26 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:16:31 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:16:32 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:16:37 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:16:37 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:16:42 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:16:42 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:16:47 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:16:47 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:16:52 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:16:53 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:16:58 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:16:58 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:17:03 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:17:03 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:17:08 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:17:08 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:17:13 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:17:14 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:17:19 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:17:19 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:17:24 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:17:24 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:17:29 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:17:29 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:17:34 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:17:34 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:17:40 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:17:40 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:17:45 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:17:45 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:17:50 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:17:50 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:17:55 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:17:56 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:18:01 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:18:01 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:18:06 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:18:06 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:18:11 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:18:11 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:18:16 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:18:16 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:18:21 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:18:22 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:18:27 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:18:27 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:18:32 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:18:32 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:18:37 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:18:37 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:18:42 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:18:43 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:18:48 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:18:48 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:18:53 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:18:53 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:18:58 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:18:58 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:19:03 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:19:04 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:19:09 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:19:09 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:19:14 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:19:14 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:19:19 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:19:19 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:19:24 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:19:24 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:19:29 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:19:30 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:19:35 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:19:35 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:19:40 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:19:40 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:19:45 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:19:45 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:19:50 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:19:51 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:19:56 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:19:56 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:20:01 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:20:01 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:20:06 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:20:07 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:20:12 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:20:12 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:20:17 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:20:17 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:20:22 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:20:23 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:20:28 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:20:28 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:20:33 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:20:33 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:20:38 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:20:38 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:20:43 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:20:43 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:20:48 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:20:49 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:20:54 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:20:54 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:20:59 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:20:59 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:21:04 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:21:04 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:21:09 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:21:10 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:21:15 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:21:15 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:21:20 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:21:20 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:21:25 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:21:25 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:21:30 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:21:31 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:21:36 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:21:36 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:21:41 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:21:41 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:21:46 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:21:46 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:21:51 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:21:52 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:21:57 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:21:57 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:22:02 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.
+Wed Jan 04 2023 16:22:02 GMT-0600 (hora estándar central) | No hay registros pendientes.
+Wed Jan 04 2023 16:22:07 GMT-0600 (hora estándar central) | Buscando respuestas pendientes.

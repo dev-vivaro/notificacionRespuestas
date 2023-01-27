@@ -6,7 +6,6 @@ const path = require('path')
 const db = require('./db/db')
 const { log } = require('./utils/log')
 const { email } = require('./utils/email')
-const request = require('./utils/request')
 const filename = path.basename(__filename,path.extname(__filename))
 let pool
 
@@ -37,7 +36,8 @@ const envioNotificacion = async () => {
     let segmentadas = resCampanas.map(campana =>{
       return resRegistros.filter(reg => reg.IdEnvioPr == campana.IdEnvioPr && reg.ModoNotificacion == campana.ModoNotificacion && reg.CorreoEndpoint == campana.CorreoEndpoint)
     })
-
+    log(filename, `${JSON.stringify(segmentadas)}`)
+    
 		const promises = segmentadas.map(async (lote, index) => {
       // notificaciones por correo
       if(resCampanas[index].ModoNotificacion == 1){
@@ -124,7 +124,7 @@ const envioNotificacion = async () => {
           //  se actualizan respuestas enviadas en lote
           lote.forEach(async reg => {
             log(filename, `${reg.IdRespuesta} | ${JSON.stringify(resultado)}`)
-            await pool
+            let actualizado = await pool
               .request()
               .input('IdRespuesta', sql.Int, reg.IdRespuesta)
               .execute('usp_ActualizaRespuestasNotificadasWS') //SP actualiza resultado
@@ -136,7 +136,7 @@ const envioNotificacion = async () => {
           // se actualizan respuestas que no pudieron ser procesadas
           lote.forEach(async reg => {
             log(filename, `${reg.IdRespuesta} | ${JSON.stringify(err)}`)
-            await pool
+            let actualizado = await pool
               .request()
               .input('IdRespuesta', sql.Int, reg.IdRespuesta)
               .execute('usp_ActualizaRespuestasNotificadasWS') //SP actualiza resultado
@@ -145,64 +145,47 @@ const envioNotificacion = async () => {
           return 0
         }  
       } else {// notificaciones por endpoint
-
         try {
-          let notificacionConfig = JSON.parse(resCampanas[index].NotificaRespuestasConfig) || {}
-          
-          if(notificacionConfig.tipoEntrega === '2'){
-            let resAutenticacion = await request(notificacionConfig.peticionToken, notificacionConfig.peticionToken.parametros)
 
-            Object.keys(resAutenticacion.data).map(key => {
-              let regex = new RegExp(`\\$\\$${key}\\$\\$`, 'g')
-              Object.keys(notificacionConfig.peticionNotificacion.headers).map(header => {
-                notificacionConfig.peticionNotificacion.headers[header] = notificacionConfig.peticionNotificacion.headers[header].replace(regex, resAutenticacion.data[key])
-              })
-            })
+          let params = lote.map(reg => {
+            return {
+              IdEnvioPr: reg.IdEnvioPr,
+              IdRespuesta: reg.IdRespuesta,
+              Telefono: reg.Telefono,
+              Texto: reg.Texto,
+              MensajeOriginal: reg.MensajeOriginal,
+              NombreEnvio: reg.NombreEnvio,
+              Fecha: reg.FechaBD
+            }
+          })
+
+          let config = {
+            headers: {
+              'Content-Type': 'application/json',
+            }
+          }
+          if(resCampanas[index].TokenEndpoint !== ''){
+            config.headers.Authorization = `Basic ${resCampanas[index].TokenEndpoint}`
           }
 
-          if(notificacionConfig.peticionNotificacion.metodo === 'POST'){// peticion bulk
+          // se realiza peticion hacia el endpoint
+          let resPeticion = await axios.post(resCampanas[index].CorreoEndpoint, params, config)
 
-            let payload = lote.map(reg => {
-              let params = {}
-              Object.keys(notificacionConfig.peticionNotificacion.parametros).map(parametro => {
-                params[parametro] = reg[notificacionConfig.peticionNotificacion.parametros[parametro]]
-              })
-              return params
-            })
-            // se realiza peticion hacia el endpoint
-            let resPeticion = await request(notificacionConfig.peticionNotificacion, payload)
-            //  se actualizan respuestas enviadas en lote
-            lote.forEach(async reg => {
-              log(filename, `${reg.IdRespuesta} | ${JSON.stringify(resPeticion.data)}`)
-              await pool
-                .request()
-                .input('IdRespuesta', sql.Int, reg.IdRespuesta)
-                .execute('usp_ActualizaRespuestasNotificadasWS') //SP actualiza resultado
-            })
-          } else {// peticion individual
-
-            lote.forEach(async reg => {
-              let params = {}
-              Object.keys(notificacionConfig.peticionNotificacion.parametros).map(parametro => {
-                params[parametro] = reg[notificacionConfig.peticionNotificacion.parametros[parametro]]
-              })
-              // se realiza peticion hacia el endpoint
-              let resPeticion = await request(notificacionConfig.peticionNotificacion, params)
-              //  se actualizan respuestas enviadas en lote
-              log(filename, `${reg.IdRespuesta} | ${JSON.stringify(resPeticion.data)}`)
-              await pool
-                .request()
-                .input('IdRespuesta', sql.Int, reg.IdRespuesta)
-                .execute('usp_ActualizaRespuestasNotificadasWS') //SP actualiza resultado
-            })
-          }
+          //  se actualizan respuestas enviadas en lote
+          lote.forEach(async reg => {
+            log(filename, `${reg.IdRespuesta} | ${JSON.stringify(resPeticion.data)}`)
+            let actualizado = await pool
+              .request()
+              .input('IdRespuesta', sql.Int, reg.IdRespuesta)
+              .execute('usp_ActualizaRespuestasNotificadasWS') //SP actualiza resultado
+          })
           
           return 1
         } catch (err) {
           console.log(err)
           lote.forEach(async reg => {
             log(filename, `${reg.IdRespuesta} | ${JSON.stringify(err)}`)
-            await pool
+            let actualizado = await pool
               .request()
               .input('IdRespuesta', sql.Int, reg.IdRespuesta)
               .execute('usp_ActualizaRespuestasNotificadasWS') //SP actualiza resultado
@@ -211,7 +194,7 @@ const envioNotificacion = async () => {
         }
         
       }
-			 
+			
 		})// termina llenado de promesas
 
 		await Promise.allSettled(promises)
@@ -227,7 +210,7 @@ const envioNotificacion = async () => {
 }
 
 (async ()=>{
-	pool = await db.getConnQA()
+	pool = await db.getConnDev()
 	envioNotificacion()
 	return 
 })()
