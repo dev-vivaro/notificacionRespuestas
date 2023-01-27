@@ -1,3 +1,6 @@
 node_modules
 logs/logdb.*
 logs/notificarespuestas.*
+logs/notificarespuestasQA.*
+logs/notificarespuestasDev.*
+logs/request.*
