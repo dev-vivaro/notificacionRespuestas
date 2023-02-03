@@ -7,6 +7,7 @@ const filename = path.basename(__filename,path.extname(__filename))
 async function request(config, payload) {
     console.log('request()', config)
     console.log('request()', payload)
+    delete config.headers['']
     try {
         let axiosConfig = {
             httpsAgent: new https.Agent({

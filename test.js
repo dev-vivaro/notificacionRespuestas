@@ -119,14 +119,23 @@ axios.post('http://gl18n5cd5p1uuplh.b.requestbin.net', {info: 'ok'}, config)
 //   console.log(err)
 // })
 
-let dbResponse = {"recordsets":[[{"IdEnvioPr":137298,"ModoNotificacion":1,"CorreoEndpoint":"cacarreon@vivaro.com;","TokenEndpoint":""},{"IdEnvioPr":137300,"ModoNotificacion":1,"CorreoEndpoint":"cacarreon@vivaro.com;","TokenEndpoint":""}],[{"IdEnvioPr":137300,"IdRespuesta":869088,"Telefono":"8111699864","MensajeRespuesta":"rESPUESTA 12:22","MensajeOriginal":"mensaje 12:21","NombreEnvio":"prueba correos carlos 1","Fecha":"Jan  4 2023  4:16PM","Columna1":"8111699864","Columna2":"Este es un mensaje corto más útil más útil más útil más útil más útil más útil","Columna3":"LEN(B2)","Columna4":"1","Columna5":"0","Columna6":"-","Columna7":"-","Columna8":"-","Columna9":"-","Columna10":"-","ModoNotificacion":1,"CorreoEndpoint":"cacarreon@vivaro.com;","TokenEndpoint":"","FechaInicial":"2022-10-25T12:21:56.857Z","FrecuenciaMinutos":5,"EnviarNotificacion":0},{"IdEnvioPr":137298,"IdRespuesta":869087,"Telefono":"8111699864","MensajeRespuesta":"rESPUESTA 10:30","MensajeOriginal":"mensaje 10:29","NombreEnvio":"envio prueba r5","Fecha":"Jan  4 2023  4:16PM","Columna1":"8111699864","Columna2":"Este es un mensaje corto más útil más útil más útil más útil más útil más útil","Columna3":"LEN(B2)","Columna4":"1","Columna5":"0","Columna6":"-","Columna7":"-","Columna8":"-","Columna9":"-","Columna10":"-","ModoNotificacion":1,"CorreoEndpoint":"cacarreon@vivaro.com;","TokenEndpoint":"","FechaInicial":"2022-10-25T10:29:13.377Z","FrecuenciaMinutos":5,"EnviarNotificacion":2}]],"recordset":[{"IdEnvioPr":137298,"ModoNotificacion":1,"CorreoEndpoint":"cacarreon@vivaro.com;","TokenEndpoint":""},{"IdEnvioPr":137300,"ModoNotificacion":1,"CorreoEndpoint":"cacarreon@vivaro.com;","TokenEndpoint":""}],"output":{},"rowsAffected":[],"returnValue":0}
-let config = {"tipoEntrega":"1","frecuencia":"1","peticionToken":{"metodo":"GET","url":"https://endpoint.com/auth","headers":{"auth":"12345"},"parametros":{"texto":"test","user":"user1"}},"peticionNotificacion":{"metodo":"POST","url":"https://eo1nbnqvfuo95p2.m.pipedream.net","headers":{"token":"321654987"},"parametros":{"mensaje":"MensajeRespuesta","telefono":"Telefono","fecha":"Fecha"}}}
-// console.log(dbResponse.recordsets[1])
-let params = {}
+// let dbResponse = {"recordsets":[[{"IdEnvioPr":137298,"ModoNotificacion":1,"CorreoEndpoint":"cacarreon@vivaro.com;","TokenEndpoint":""},{"IdEnvioPr":137300,"ModoNotificacion":1,"CorreoEndpoint":"cacarreon@vivaro.com;","TokenEndpoint":""}],[{"IdEnvioPr":137300,"IdRespuesta":869088,"Telefono":"8111699864","MensajeRespuesta":"rESPUESTA 12:22","MensajeOriginal":"mensaje 12:21","NombreEnvio":"prueba correos carlos 1","Fecha":"Jan  4 2023  4:16PM","Columna1":"8111699864","Columna2":"Este es un mensaje corto más útil más útil más útil más útil más útil más útil","Columna3":"LEN(B2)","Columna4":"1","Columna5":"0","Columna6":"-","Columna7":"-","Columna8":"-","Columna9":"-","Columna10":"-","ModoNotificacion":1,"CorreoEndpoint":"cacarreon@vivaro.com;","TokenEndpoint":"","FechaInicial":"2022-10-25T12:21:56.857Z","FrecuenciaMinutos":5,"EnviarNotificacion":0},{"IdEnvioPr":137298,"IdRespuesta":869087,"Telefono":"8111699864","MensajeRespuesta":"rESPUESTA 10:30","MensajeOriginal":"mensaje 10:29","NombreEnvio":"envio prueba r5","Fecha":"Jan  4 2023  4:16PM","Columna1":"8111699864","Columna2":"Este es un mensaje corto más útil más útil más útil más útil más útil más útil","Columna3":"LEN(B2)","Columna4":"1","Columna5":"0","Columna6":"-","Columna7":"-","Columna8":"-","Columna9":"-","Columna10":"-","ModoNotificacion":1,"CorreoEndpoint":"cacarreon@vivaro.com;","TokenEndpoint":"","FechaInicial":"2022-10-25T10:29:13.377Z","FrecuenciaMinutos":5,"EnviarNotificacion":2}]],"recordset":[{"IdEnvioPr":137298,"ModoNotificacion":1,"CorreoEndpoint":"cacarreon@vivaro.com;","TokenEndpoint":""},{"IdEnvioPr":137300,"ModoNotificacion":1,"CorreoEndpoint":"cacarreon@vivaro.com;","TokenEndpoint":""}],"output":{},"rowsAffected":[],"returnValue":0}
+// let config = {"tipoEntrega":"1","frecuencia":"1","peticionToken":{"metodo":"GET","url":"https://endpoint.com/auth","headers":{"auth":"12345"},"parametros":{"texto":"test","user":"user1"}},"peticionNotificacion":{"metodo":"POST","url":"https://eo1nbnqvfuo95p2.m.pipedream.net","headers":{"token":"321654987"},"parametros":{"mensaje":"MensajeRespuesta","telefono":"Telefono","fecha":"Fecha"}}}
+// // console.log(dbResponse.recordsets[1])
+// let params = {}
 
-dbResponse.recordsets[1].map(reg => {
-  Object.keys(config.peticionNotificacion.parametros).map(parametro => {
-    params[parametro] = reg[config.peticionNotificacion.parametros[parametro]]
-  })
-})
-console.log(params)
+// dbResponse.recordsets[1].map(reg => {
+//   Object.keys(config.peticionNotificacion.parametros).map(parametro => {
+//     params[parametro] = reg[config.peticionNotificacion.parametros[parametro]]
+//   })
+// })
+// console.log(params)
+
+
+let config = {
+  headers: {"":""}
+}
+console.log(config)
+delete config.headers['']
+
+console.log(config)
