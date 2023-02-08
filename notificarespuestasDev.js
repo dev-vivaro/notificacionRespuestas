@@ -49,22 +49,12 @@ const envioNotificacion = async () => {
             tabla += `
             <tr>
             <td> ${reg.IdEnvioPr} </td>
-            <td> ${reg.IdRespuesta} </td>
+            <td> ${reg.IdRegistro} </td>
             <td> ${reg.Telefono} </td>
-            <td> ${reg.Texto} </td>
+            <td> ${reg.MensajeRespuesta} </td>
             <td> ${reg.MensajeOriginal} </td>
             <td> ${reg.NombreEnvio} </td>
-            <td> ${reg.FechaBD} </td>
-            <td> ${reg.Columna1} </td>
-            <td> ${reg.Columna2} </td>
-            <td> ${reg.Columna3} </td>
-            <td> ${reg.Columna4} </td>
-            <td> ${reg.Columna5} </td>
-            <td> ${reg.Columna6} </td>
-            <td> ${reg.Columna7} </td>
-            <td> ${reg.Columna8} </td>
-            <td> ${reg.Columna9} </td>
-            <td> ${reg.Columna10} </td>
+            <td> ${reg.Fecha} </td>
             </tr>`
           })
 
@@ -82,22 +72,12 @@ const envioNotificacion = async () => {
                 <thead style="color:white; background-color: black;">
                   <tr style="font-family: Arial; font-size: 13px;">
                     <th>IdCampaña</th>
-                    <th>IdRespuesta</th>
+                    <th>IdRegistro</th>
                     <th>Teléfono</th>
                     <th>Texto</th>
                     <th>Mensaje Original</th>
                     <th>Nombre Envío</th>
                     <th>Fecha Respuesta</th>
-                    <th>Columna1</th>
-                    <th>Columna2</th>
-                    <th>Columna3</th>
-                    <th>Columna4</th>
-                    <th>Columna5</th>
-                    <th>Columna6</th>
-                    <th>Columna7</th>
-                    <th>Columna8</th>
-                    <th>Columna9</th>
-                    <th>Columna10</th>
                   </tr>
                 </thead>
                 <tbody>
