@@ -5,8 +5,8 @@ const { log } = require('./log')
 const filename = path.basename(__filename,path.extname(__filename))
 
 async function request(config, payload) {
-    console.log('request()', config)
-    console.log('request()', payload)
+    // console.log('request()', config)
+    // console.log('request()', payload)
     delete config.headers['']
     try {
         let axiosConfig = {
@@ -24,7 +24,7 @@ async function request(config, payload) {
         log(filename, `RESPONSE: ${JSON.stringify(response.data)}`)
         return response
     } catch (err) {
-        console.log(err)
+        // console.log(err)
         log(filename, `ERROR: ${err}`)
         return err
     }

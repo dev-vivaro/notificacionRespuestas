@@ -1,7 +1,7 @@
 const PID = process.pid
 process.title = `PID: ${PID}`
 const sql = require('mssql')
-const axios = require('axios')
+// const axios = require('axios')
 const path = require('path')
 const db = require('./db/db')
 const { log } = require('./utils/log')
@@ -199,7 +199,7 @@ const envioNotificacion = async () => {
           
           return 1
         } catch (err) {
-          console.log(err)
+          // console.log(err)
           lote.forEach(async reg => {
             log(filename, `${reg.IdRespuesta} | ${JSON.stringify(err)}`)
             await pool
